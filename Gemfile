@@ -5,9 +5,12 @@ gem 'devise'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '5.1.3'
-
-gem 'sqlite3'
-
+group :development, :test do
+  gem 'sqlite3'
+end
+group :production do
+  gem 'pg', '~> 0.21' 
+end
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
