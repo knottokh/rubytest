@@ -9,6 +9,7 @@ group :development, :test do
 end
 group :production do
   gem 'pg', '~> 0.21' 
+  gem 'puma'
 end
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
